@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Descripcion</title>
+  </head>
+
+  <body>
+    <h1>Descripcion de Usuarios</h1>
+    <div>ID: {{des.id}}</div>
+    <div>Nombre: {{des.nombre}}</div>
+    
+
+    <a href="http://127.0.0.1:8000/">Regresar a inicio</a>
+
+    <!-- Debido a que le hemos dado un nombre al path de inicio, podemos usar la siguiente sintaxis:-->
+    <h2>Con sintaxis url (el de abajo)</h2>
+    <a href="{% url 'index'%}">Regresar a inicio</a>
+    
+    
+  </body>
+</html>

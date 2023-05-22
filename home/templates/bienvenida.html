@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bienvanida Pestaña</title>
+  </head>
+
+  <body>
+    <h1>😄 BIENVENIDO A MI PÁGINA WEB 😎</h1>
+
+
+    <p>Lista de Miembros</p>
+    <div>Numero de miembros: {{num_miembros}}</div>
+    <div>
+      <ul>
+        {% for miembro in list_miembros %}
+        <li>
+          - Miembro N°{{miembro.id}}
+          <a href="descripcion/{{miembro.id}}">Ver descripcion --- </a>
+          <a href="actualizar/{{miembro.id}}">Actualizar Miembro</a>
+          <a href="eliminar/{{miembro.id}}">Eliminar Miembro</a>
+
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <a href="agregar">Agregar nuevo miembro</a>
+
+    <p>🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒</p>
+    <p>Lista de Proyectos</p>
+    <div>
+      <ul>
+        {% for proyecto in list_proyectos %}
+        <li>
+          - Proyecto N°{{proyecto.id}}
+          <a href="ddescripcionproyecto/{{proyecto.id}}">Ver descripcion</a>
+          <a href="actualizarproyecto/{{proyecto.id}}">Actualizar proyecto</a>
+          <a href="eliminarproyecto/{{proyecto.id}}">Eliminar proyecto</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <a href="agregarproyecto">Asignar nuevo proyecto</a>
+
+    <p>🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒</p>
+      <p>Lista de Publicaciones</p>
+      <div>
+        <ul>
+          {% for publicacion in list_publicacion %}
+          <li>
+            - {{publicacion}}
+            <a href="descripcionpublicacion/{{publicacion.id}}">Ver descripcion</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+
+  </body>
+</html>

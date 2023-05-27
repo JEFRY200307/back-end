@@ -1,0 +1,8 @@
+# editor code
+.idea
+# virtual enviroment
+.venv
+#cache
+__pycache__/
+*/__pycache__/
+NuWeb/__pycache__/
